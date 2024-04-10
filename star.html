@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="star.css">
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .stars i{
+            color:#e6e6e6;
+            transition: color 0.2s ease;
+        }
+
+        .stars i.active{
+            color:#ff9c1a;
+        }
+    </style>
+
+</head>
+
+<body class="h-screen flex justify-center items-center  bg-gradient-to-r from-purple-500 to-pink-500">
+
+    <div class="rating-box relative bg-white py-7 px-12 rounded-3xl shadow-xl">
+
+        <header class="text-xl font-semibold mb-2 ">
+            How was your experience?
+        </header>
+
+        <div class="stars mt-4 cursor-pointer text-3xl flex items-center text-[#e6e6e6ef] gap-5">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+    </div>
+</body>
+</html>
